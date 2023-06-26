@@ -1,1 +1,1 @@
-# name-it
+# Name It React Project
