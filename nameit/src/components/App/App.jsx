@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/header'
 import './App.css'
+import SearchBox from '../SearchBox/SearchBox';
 
 // Functional Component
 /*
@@ -13,10 +14,14 @@ function App () {
 // Class Based Component
 
 class App extends React.Component {
+  state = {
+    headerText: "Name It!",
+  };
   render () {
     return (
       <div>
-        <Header />
+        <Header headTitle={this.state.headerText} />
+        <SearchBox />
       </div>
     )
   }
